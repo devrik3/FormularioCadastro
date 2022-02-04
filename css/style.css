@@ -1,0 +1,257 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+	font-family: 'IBM Plex Sans', sans-serif;
+}
+* input:focus{outline: none; box-shadow: none;}
+
+
+
+html,
+body,
+*{
+	scroll-behavior: smooth;
+}
+body{
+	overflow-x: hidden;
+	overflow-y: scroll;
+	background: #FFF6FF;
+}
+body::-webkit-scrollbar{
+	width: 0;
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 2rem;
+}
+
+main .verClientes {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+main h1 {
+	font-size: 20pt;
+	font-weight: 500;
+	color: #151418ca;
+	text-align: center;
+}
+main .verClientes .procurar-cliente {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+main .verClientes .procurar-cliente label {
+	background: #fff;
+	width: 100%;
+	height: 2rem;
+	padding: .25rem;
+	margin: .25rem 0 1.5rem;
+	border: .002rem solid #0081CF;
+
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	/*box-shadow: 0px 0px 5px #000;*/
+
+	cursor: text;
+}
+main .verClientes .procurar-cliente label:hover {
+	border: .002rem solid #2C73D2;
+}
+
+main .verClientes .procurar-cliente label input {
+	width: 100%;
+	height: 1.9rem;
+	margin-left: .25rem;
+	
+	border: none;
+	background: transparent;
+}
+main .verClientes .procurar-cliente label i {
+	color: #757575;
+}
+main .verClientes button {
+	width: 75%;
+	height: 2rem;
+
+	background: #0081CF;
+	border: 2px solid #0081CF;
+
+	cursor: pointer;
+
+	color: #fff;
+	font-size: 10pt;
+
+	box-shadow: 2px 3px 5px rgba(0,0,0, .20);
+}
+main .verClientes button:hover {
+	border: .002rem solid #2C73D2;
+	background: #2C73D2;
+	transition: .5s;
+}
+
+main .showForm { display: block!important; }
+main .hideArea { display: none!important; }
+main .d-block {display: block!important;}
+main .cadastoCliente{display: none;}
+main .cadastroForm {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+main .cadastroForm .breadCrumb-estado {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+main .cadastroForm .breadCrumb-estado .line {
+	position: absolute;
+	width: 100%;
+	height: 5px;
+	background: #0081CF;
+	z-index: 1;
+	border-radius: 25px;
+}
+main .cadastroForm .breadCrumb-estado .estado-bread{
+	width: 45px;
+	height: 45px;
+	margin: 1rem 2rem;
+	border-radius: 50%;
+
+	background: #0081CF;
+	color: #FFF;
+	font-size: 12pt;
+	cursor: pointer;
+
+	z-index: 999;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+main .cadastroForm .breadCrumb-estado .estado-bread:hover{
+	background: #2C73D2;
+}
+
+main .cadastroForm form {
+	background: #FFF;
+	width: 20rem;
+	padding: .5rem;
+	box-shadow: 2px 5px 10px rgba(0,0,0, .05);
+	overflow: hidden;
+}
+main .cadastroForm form input {
+	width: 100%;
+	height: 2.25rem;
+	padding: 0 .5rem;
+	border: 1px solid #151418ca;
+	border-radius: 0;
+}
+main .cadastroForm form label h2 {
+	font-size: 15pt;
+	font-weight: 500;
+	margin-top: .75rem;
+}
+
+main .cadastroForm form button {
+	width: 100%;
+	height: 2rem;
+	margin-top: 2rem;
+
+	background: #0081CF;
+	border: 1px solid #0081CF;
+
+	cursor: pointer;
+
+	color: #fff;
+	font-size: 10pt;
+
+}
+main .cadastroForm form button:hover {
+	border: .002rem solid #2C73D2;
+	background: #2C73D2;
+	transition: .5s;
+}
+main .cadastroForm form label h2{display: flex;}
+main .cadastroForm form label h2 p{font-size: 10pt; color: #0081CF}
+
+main .cadastroForm form .estado2{display: none;}
+
+main .cadastroForm form .estado3{
+	display: none;
+}
+main .cadastroForm form .estado3 h2{
+	text-align: center;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 16pt;
+	color: #0AB02E;
+}
+main .cadastroForm form .estado3 i{
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	margin: 1rem 0;
+
+	text-align: center;
+	font-size: 25pt;
+	background: #0AB02E;
+	color: #FFF;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 1.5rem auto;
+}
+main .cadastroForm form .estado3 p{
+	text-align: center;
+	color: #151418ca;
+	font-size: 11pt;
+}
+
+
+main .cadastroForm form .hideForm{display: none;}
+main .cadastroForm form .viewForm{display: block;}
+main .cadastroForm form .d-none{display: none;}
+* input[type="number"]::-webkit-outer-spin-button,
+* input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+* input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+
+
+main .d-none-tela{display: none!important;}
+main .d-flex{display: flex!important;}
+
+main #sClientes{margin: 0 0 1rem; text-align: center;}
+
+main .clientes .alfabeto {
+	display: block;
+	width: 35rem;
+	background: rgba(255,254,255,.20);
+	color: #151418ca;
+	border-radius: .25rem; 
+	padding: .75rem;
+	margin: .5rem 0;
+	font-size: 12pt;
+
+}

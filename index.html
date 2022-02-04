@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Sistema | Cliente</title>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Formulário de cadrastar clientes!">
+	<meta property="og:title" content="Cadraste Clientes!">
+	<meta property="og:description" content="Cadastre Clientes!">
+	<meta property="og:image" content="favicon.png">
+	<link rel="icon" type="imagem/png" href="favicon.png" />
+	<link rel="stylesheet" href="css/style.css">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<main>
+		<section class="verClientes" id="areaVerClientes">
+			<div class="procurar-cliente">
+				<h1>Clientes Cadrastados</h1>
+				<label for="search-cliente">
+					<i class="fas fa-search"></i>
+					<input type="search" id="search-cliente" placeholder="Procurar Cliente">
+				</label>
+			</div>
+			<div class="clientes">
+				<p id="sClientes">Sem clientes :(</p>
+			</div>
+			<button id="cadastroCliente">Novo Cliente</button>
+		</section>
+		<section class="cadastoCliente" id="areaCadastro">
+			<h1>Cadastro Cliente</h1>
+			<article class="cadastroForm">
+				
+				<div class="breadCrumb-estado">
+					<span class="bread-1 estado-bread" id="estagio-1-breadcrumb">
+						<i class="fas fa-user-cog"></i>
+					</span>
+					<span class="bread-1 estado-bread" id="estagio-2-breadcrumb">
+						<i class="fas fa-address-card"></i>
+					</span>
+					<span class="bread-1 estado-bread">
+						<i class="fas fa-check"></i>
+					</span>
+					<span class="line"></span>
+				</div>
+				
+
+				<form id="formulario" method="POST">
+					
+					<div class="estado1" id="primeiroEstagio">
+						
+
+						<span class="formInput fNome">
+							<label for="fNome">
+							<h2>Nome <p>*</p></h2>
+							<input type="text" id="fNome" placeholder="Nome" required>
+								
+							</label>
+						</span>
+
+
+						<span class="formInput fEmail">
+							<label for="fEmail">
+							<h2>E-Mail <p>*</p></h2>
+							<input type="email" id="fEmail" placeholder="E-Mail" required>
+								
+							</label>
+						</span>
+
+
+						<span class="formInput fTelefone">
+							<label for="fTelefone">
+							<h2>Telefone <p>*</p></h2>
+							<input type="number" id="fTelefone" placeholder="(00) 00000-0000" required>
+								
+							</label>
+						</span>
+						
+						<button id="proximo-estg1-btn">Continuar</button>
+
+					</div>
+					
+
+					<div class="estado2" id="segundoEstagio">
+						<span class="formInput fRG">
+							<label for="fIdentificador">
+							<h2>CPF/RG <p>*</p></h2>
+							<input type="number" id="fIdentificador" placeholder="CPF / RG" required>
+								
+							</label>
+						</span>
+
+
+						<span class="formInput fEndereco">
+							<label for="fEndereco">
+							<h2>Endereço <p>*</p></h2>
+							<input type="text" id="fEndereco" placeholder="Rua, N" required>
+								
+							</label>
+						</span>
+
+
+						<span class="formInput fCEP">
+							<label for="fCep">
+							<h2>CEP</h2>
+							<input type="number" id="fCep" placeholder="CEP">
+								
+							</label>
+						</span>
+						
+						<button id="proximo-estg2-btn">Continuar</button>
+
+					</div>
+					<div class="estado3" id="terceiroEstagio">
+						<h2>Cliente Cadrastado<br>Com Sucesso!</h2>
+						<i class="fas fa-check"></i>
+						<p>Aguarde de 5-60s pro sistema adicionar! :)</p>
+					</div>
+
+					
+					<!-- <button id="submitButton">Continuar</button> -->
+				</form>
+			</article>
+		</section>
+	</main>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="js/front-settings.js"></script>
+<script src="js/backend.js"></script>
+</body>
+</html>
